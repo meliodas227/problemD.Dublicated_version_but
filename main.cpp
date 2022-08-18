@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <chrono>
 using namespace std;
 using namespace chrono;
 const int MAX = 1e7;
@@ -30,11 +29,7 @@ int main() {
     cin>>t;
     for (int i = 0; i < t; ++i) {
         cin>>n;
-        auto start = high_resolution_clock::now();
         cout<<solve(n)<<endl;
-        auto end = high_resolution_clock::now();
-        auto duration = duration_cast<milliseconds>(end-start);
-        cout<<duration.count();
     }
     return 0;
 }
